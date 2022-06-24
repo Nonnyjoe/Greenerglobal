@@ -632,7 +632,7 @@ h1 {
 
 .banner {
     margin-top: 3em;
-    width: 100vw;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: baseline;
@@ -679,6 +679,10 @@ h1 {
 
 .p-s1 {
     margin-top: 2.8em;
+}
+
+.p-s {
+    margin-right: 0px !important;
 }
 
 .p-s p {
@@ -933,6 +937,14 @@ h1 {
     background-color: #fff;
     display: flex;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.star-container img {
+    width: 30px !important;
+    height: 30px !important;
 }
 
 .card-title {
