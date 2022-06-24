@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: green;
+}
+
+.header-section {
+    height: 70vh;
+    width: auto;
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../img/902ba3cda1883801594b6e1b452790cc53948fda.jpg');
+}
