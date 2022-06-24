@@ -682,7 +682,7 @@ h1 {
 }
 
 .p-s p {
-    color: #343a40;
+    color: #212529;
     font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
@@ -845,7 +845,7 @@ h1 {
     background: linear-gradient(to bottom right, #95af47, #95af47, #288a3e);
     padding: 100px;
     overflow: hidden;
-    height: 80vh !important;
+    height: fit-content !important;
     margin-top: 0px !important;
     margin-bottom: -10px !important;
 }
@@ -1047,16 +1047,61 @@ html {
     .h-content h1 {
         font-size: 40px;
     }
+    .h-content {
+        height: 75vh !important;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
+    .header-section {
+        height: 75vh;
+        width: auto;
+        position: relative;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top !important;
+        background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../img/902ba3cda1883801594b6e1b452790cc53948fda.jpg');
+        overflow: hidden;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
     .first-btn {
         width: fit-content;
         align-self: center;
         justify-self: center;
         position: relative;
     }
+    .banner {
+        display: none;
+    }
     .banner-border p {
         color: #343a40;
         font-family: 'Signika Negative', sans-serif;
         font-size: 14px;
+    }
+    .title::before {
+        content: '';
+        height: 25px;
+        width: 25px;
+        border-bottom: 7px solid #9bbc35;
+        border-left: 7px solid #9bbc35;
+        position: absolute;
+        z-index: 1;
+        bottom: -14px;
+        left: -14px;
+    }
+    .title::after {
+        content: '';
+        height: 25px;
+        width: 25px;
+        border-top: 7px solid #9bbc35;
+        border-right: 7px solid #9bbc35;
+        position: absolute;
+        z-index: 1;
+        margin-top: -7px;
+        margin-left: -7px;
     }
     .about-us,
     .p-s1,
@@ -1080,7 +1125,7 @@ html {
         text-align: justify;
     }
     .c-add {
-        height: 75vh !important;
+        height: fit-content !important;
     }
     .Testimonials {
         margin-top: 0px !important;
@@ -1140,11 +1185,34 @@ html {
         margin-top: -3px;
         font-family: 'Poppins', sans-serif;
     }
+    .s-hidden {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 350px) and (max-width:500px) {
     .h-content h1 {
         font-size: 40px;
+    }
+    .h-content {
+        height: 75vh !important;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
+    .header-section {
+        height: 75vh;
+        width: auto;
+        position: relative;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top !important;
+        background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../img/902ba3cda1883801594b6e1b452790cc53948fda.jpg');
+        overflow: hidden;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .first-btn {
         width: fit-content;
@@ -1152,10 +1220,35 @@ html {
         justify-self: center;
         position: relative;
     }
+    .banner {
+        display: none;
+    }
     .banner-border p {
         color: #343a40;
         font-family: 'Signika Negative', sans-serif;
         font-size: 14px;
+    }
+    .title::before {
+        content: '';
+        height: 25px;
+        width: 25px;
+        border-bottom: 7px solid #9bbc35;
+        border-left: 7px solid #9bbc35;
+        position: absolute;
+        z-index: 1;
+        bottom: -14px;
+        left: -14px;
+    }
+    .title::after {
+        content: '';
+        height: 25px;
+        width: 25px;
+        border-top: 7px solid #9bbc35;
+        border-right: 7px solid #9bbc35;
+        position: absolute;
+        z-index: 1;
+        margin-top: -7px;
+        margin-left: -7px;
     }
     .about-us,
     .p-s1,
@@ -1175,7 +1268,7 @@ html {
         text-align: justify;
     }
     .c-add {
-        height: 75vh !important;
+        height: fit-content !important;
     }
     .Testimonials {
         margin-top: 0px !important;
@@ -1228,23 +1321,46 @@ html {
         margin-top: -3px;
         font-family: 'Poppins', sans-serif;
     }
+    .shift {
+        margin-left: 30px;
+    }
+    .s-hidden {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width:991px) {
+    .h-content {
+        height: 60vh !important;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+    }
     .header-section {
-        height: 70vh;
+        height: 60vh;
+        width: auto;
+        position: relative;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: top !important;
+        background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../img/902ba3cda1883801594b6e1b452790cc53948fda.jpg');
+        overflow: hidden;
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .ps-img .img {
         min-height: auto;
         max-width: 120px;
     }
     .goals-bg {
-        height: 37vh;
+        height: 30vh;
         padding-left: 1em;
         padding-right: 2.3em;
     }
     .c-add {
-        height: 45vh !important;
+        height: fit-content !important;
     }
     .try {
         padding-top: 3vh;
