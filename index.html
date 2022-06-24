@@ -6,9 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Animiate on scroll Style link -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <!-- Animiate on scroll ends here -->
+    <!-- Animiate CSS and JS Style link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Animiate CSS ends here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@100;200;400;600;700&family=Signika+Negative:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -124,22 +130,25 @@
         </div>
     </section>
 
-    <div class="header-section container-fluid" id="home">
-        <div class="h-content">
-            <h1>
+    <div class="header-section container-fluid " id="home">
+        <div class="h-content ">
+            <h1 class="hero-heading wow fadeInDown" data-wow-duration="0.6s" style="visibility: visible; -webkit-animation: 0.6s;">
                 Greener Global Exports
             </h1>
-            <p>
+            <span class="hero-heading wow fadeInUp" data-wow-duration="0.6s" style="visibility: visible; -webkit-animation: 0.6s;">
+                <p>
                 Meeting your needs with quality supplies.
             </p>
             <div class="d-grid gap-2 d-md-flex d-sm-flex justify-content-sm-center" data-aos="zoom-in">
                 <a class="btn first-btn" href="#Contact" role="button">Contact us</a>
-            </div>
+            </div>  
+            </span>
+
         </div>
     </div>
 
     <section>
-        <div class="container-fliud banner" data-aos="fade-in">
+        <div class="container-fliud banner wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
             <div class="banner-border row justify-content-around g-3">
                 <div class="col-md-4 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#95af47" class="bi bi-cart4" viewBox="0 0 16 16">
@@ -173,10 +182,10 @@
     <section class="about-us" id="About">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6" data-aos="slide-right">
+                <div class="col-md-6 wow slideInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">
                     <img src="./img/palm-oil-producing-industry-concept-with-workers-vector-25632960_ml_resize_x6-removebg.png" class="abt-img image-responsive responsive-image" alt="">
                 </div>
-                <div class="col-md-6" data-aos="slide-left">
+                <div class="col-md-6 wow slideInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">
                     <h1 class="title">
                         About Us
                     </h1>
@@ -195,7 +204,8 @@
     <section>
         <div class="container p-s1" id="Products">
             <div class="row p-s align-self-center g-5">
-                <div class="col-md-8" data-aos="slide-down">
+                <div class="col-md-8 col-12 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.2s" style="width: 100vw; padding-right: 0px !important;" data-aos="">
+
                     <h1 class="title">
                         Products & Services
                     </h1>
@@ -208,7 +218,7 @@
                 <div class="col-md-12 ps-img" data-aos="zoom-in-up">
                     <div class="container">
                         <div class="row g-4">
-                            <div class="col-md-6 lg-img" data-aos="zoom-in-up">
+                            <div class="col-md-6 lg-img wow zoomInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                                 <img src="./img/products/3-e1cc91fe1fbf4e74aa8ce610d91cead8.jpg" class="img-fluid lg-img1" alt="">
                                 <div class="p-info-l">
                                     <div class="p-text-l">
@@ -225,7 +235,7 @@
                             <div class="col-md-6">
                                 <div class="container">
                                     <div class="row g-4">
-                                        <div class="col-md-6 p-conta" data-aos="zoom-in-up">
+                                        <div class="col-md-6 p-conta wow zoomInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                                             <img src="./img/products/1518698601-34-dieye-supplies-services.jpg" class="img w-img img-fluid" alt="">
                                             <div class="p-info">
                                                 <div class="p-text">
@@ -239,7 +249,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6 p-conta" data-aos="zoom-in-up">
+                                        <div class="col-md-6 p-conta wow zoomInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                                             <img src="./img/products/14186308-palm-oil-in-pet-bottles.webp" class="img w-img img-fluid" alt="">
                                             <div class="p-info">
                                                 <div class="p-text">
@@ -253,7 +263,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6 p-conta" data-aos="zoom-in-up">
+                                        <div class="col-md-6 p-conta wow zoomInDown" data-wow-duration="1s" data-wow-delay="0.2s">
                                             <img src="./img/products/20180217143910151887835016f41a4dc4f5863e5bec5809dbed956d.jpg" class="img img-fluid" alt="">
                                             <div class="p-info">
                                                 <div class="p-text">
@@ -267,7 +277,7 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6 p-conta" data-aos="zoom-in-up">
+                                        <div class="col-md-6 p-conta wow zoomInDown" data-wow-duration="0.6s" data-wow-delay="0.2s">
                                             <img src="./img/products/ezgif.com-gif-maker (7).jpg" class="img img-fluid" alt="">
                                             <div class="p-info">
                                                 <div class="p-text">
@@ -313,20 +323,20 @@
 
     <section>
         <div class="goals-bg" id="Goals">
-            <h1>
+            <h1 class="wow slideInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">
                 Our Goals
             </h1>
-            <p>
+            <p class="wow slideInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">
                 Our goal as a company is to give the world the best edible oil for healthy living and better life as well as palm oil byproducts for industrial servicing
             </p>
         </div>
     </section>
 
     <section>
-        <div class="container-fliud contact" id="Contact">
-            <div class="row contact-us g-3">
-                <div class="col-md-6 c-add" data-aos="slide-right">
-                    <span class="add">
+        <div class="container-fliud contact " id="Contact ">
+            <div class="row contact-us g-3 ">
+                <div class="col-md-6 c-add wow slideInLeft" data-wow-duration="0.6s" data-wow-delay="0.5s">
+                    <span class="add ">
                     <h1>
                         100% Satisfaction Guranteed
                     </h1>
@@ -336,41 +346,41 @@
                     </h3>
                     <br>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
-                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="27 " height="27 " fill="currentColor " class="bi bi-check2-circle " viewBox="0 0 16 16 ">
+                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z "/>
+                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z "/>
                           </svg> We prepare a proposal.
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
-                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="27 " height="27 " fill="currentColor " class="bi bi-check2-circle " viewBox="0 0 16 16 ">
+                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z "/>
+                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z "/>
                           </svg> We’ll discuss it.
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
-                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="27 " height="27 " fill="currentColor " class="bi bi-check2-circle " viewBox="0 0 16 16 ">
+                            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z "/>
+                            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z "/>
                           </svg> We ship your Order immediately
                     </p>
                     </span>
                 </div>
-                <div class="col-md-6 try" data-aos="slide-left">
+                <div class="col-md-6 try wow slideInRight" data-wow-duration="0.6s" data-wow-delay="0.5s">
                     <span>
                       
                     </span>
-                    <span class="form">
+                    <span class="form ">
                         <h1>
                             Contact us
                         </h1>
                         <br>
                        
-                        <form action="" method="post">
-                            <input type="text" name="Firstname" class="form-control mb-3 input" placeholder="Firstname" id="">
-                            <input type="text" name="Lastname" class="form-control mb-3 input" placeholder="Lastname" id="">
-                            <input type="email" name="email" class="form-control mb-3 input" placeholder="Email" id="">
-                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1 input" placeholder="Message" rows="3"></textarea>
-                            <input type="button" class="btn submit " value="Submit">
+                        <form action=" " method="post ">
+                            <input type="text " name="Firstname " class="form-control mb-3 input " placeholder="Firstname " id=" ">
+                            <input type="text " name="Lastname " class="form-control mb-3 input " placeholder="Lastname " id=" ">
+                            <input type="email " name="email " class="form-control mb-3 input " placeholder="Email " id=" ">
+                            <textarea class="form-control mb-3 " id="exampleFormControlTextarea1 input " placeholder="Message " rows="3 "></textarea>
+                            <input type="button " class="btn submit " value="Submit ">
                         </form>
                     </span>
                 </div>
@@ -378,83 +388,83 @@
         </div>
     </section>
 
-    <section class="testimonies" id="Testimonials">
-        <div class="container Testimonials">
+    <section class="testimonies " id="Testimonials ">
+        <div class="container Testimonials ">
             <br><br>
-            <h1 class="title">
+            <h1 class="title ">
                 Testimonials
             </h1>
         </div>
         <br>
 
-        <div class="owl-carousel owl-theme container">
+        <div class="owl-carousel owl-theme container star ">
             <div class="item ">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <div class="star-container">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/unticked_star-removebg-preview.png" class="img-fluid" alt="">
+                <div class="card " style="width: 18rem; ">
+                    <div class="card-body ">
+                        <div class="star-container ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/unticked_star-removebg-preview.png " class="img-fluid " alt=" ">
 
                         </div>
-                        <h5 class="card-title">Dazzle Super African Store</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Canada</h6>
-                        <p class="card-text">I bought your Oil all the way from Canada, and i must say the value stays till the last drop. You are rare, i'll refer my friends .</p>
+                        <h5 class="card-title ">Dazzle Super African Store</h5>
+                        <h6 class="card-subtitle mb-2 text-muted ">Canada</h6>
+                        <p class="card-text ">I bought your Oil all the way from Canada, and i must say the value stays till the last drop. You are rare, i'll refer my friends .</p>
 
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="card" style="width: 18rem; margin-right: 5em !important;">
-                    <div class="card-body">
-                        <div class="star-container">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
+            <div class="item ">
+                <div class="card " style="width: 18rem; margin-right: 5em !important; ">
+                    <div class="card-body ">
+                        <div class="star-container ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
                         </div>
-                        <h5 class="card-title">Mrs. Joy Onoche</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">U.S.A</h6>
-                        <p class="card-text">The palm nuts arrived as promissed and the quality is praise worthy, i'm completely satisfied with this service.</p>
+                        <h5 class="card-title ">Mrs. Joy Onoche</h5>
+                        <h6 class="card-subtitle mb-2 text-muted ">U.S.A</h6>
+                        <p class="card-text ">The palm nuts arrived as promissed and the quality is praise worthy, i'm completely satisfied with this service.</p>
 
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="card" style="width: 18rem; margin-right: 5em !important;">
-                    <div class="card-body">
-                        <div class="star-container">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/unticked_star-removebg-preview.png" class="img-fluid" alt="">
+            <div class="item ">
+                <div class="card " style="width: 18rem; margin-right: 5em !important; ">
+                    <div class="card-body ">
+                        <div class="star-container ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/unticked_star-removebg-preview.png " class="img-fluid " alt=" ">
 
                         </div>
-                        <h5 class="card-title">Reliable Agro Service</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Turkey</h6>
-                        <p class="card-text">I must say, your services are superb. Keep up the good work.</p>
+                        <h5 class="card-title ">Reliable Agro Service</h5>
+                        <h6 class="card-subtitle mb-2 text-muted ">Turkey</h6>
+                        <p class="card-text ">I must say, your services are superb. Keep up the good work.</p>
 
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="card" style="width: 18rem; margin-right: 5em !important;">
-                    <div class="card-body">
-                        <div class="star-container">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
-                            <img src="./img/ticked star.png" class="img-fluid" alt="">
+            <div class="item ">
+                <div class="card " style="width: 18rem; margin-right: 5em !important; ">
+                    <div class="card-body ">
+                        <div class="star-container ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
+                            <img src="./img/ticked star.png " class="img-fluid " alt=" ">
 
                         </div>
-                        <h5 class="card-title">Mr. Bala Muhammed</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Nigeria</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title ">Mr. Bala Muhammed</h5>
+                        <h6 class="card-subtitle mb-2 text-muted ">Nigeria</h6>
+                        <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                     </div>
                 </div>
@@ -466,96 +476,99 @@
 
     </section>
 
-    <section class="footer">
-        <div class="container">
-            <div class="row g-3">
-                <div class="col-md-4 col-12 address">
+    <section class="footer ">
+        <div class="container ">
+            <div class="row g-3 ">
+                <div class="col-md-4 col-12 address ">
                     <h3>
                         Address
                     </h3>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="15 " height="15 " fill="currentColor " class="bi bi-house-fill " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z "/>
+                            <path fill-rule="evenodd " d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z "/>
                           </svg>
-                        <span class="add-m">
-                             No.12 Obeledu Street, Emene, Enugu State, <span class="shift"> Nigeria. </span>
+                        <span class="add-m ">
+                             No.12 Obeledu Street, Emene, Enugu State, <span class="shift "> Nigeria. </span>
                         </span>
 
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-envelope-paper-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16 5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="15 " height="15 " fill="currentColor " class="bi bi-envelope-paper-fill " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M6.5 9.5 3 7.5v-6A1.5 1.5 0 0 1 4.5 0h7A1.5 1.5 0 0 1 13 1.5v6l-3.5 2L8 8.75l-1.5.75ZM1.059 3.635 2 3.133v3.753L0 5.713V5.4a2 2 0 0 1 1.059-1.765ZM16 5.713l-2 1.173V3.133l.941.502A2 2 0 0 1 16
+                5.4v.313Zm0 1.16-5.693 3.337L16 13.372v-6.5Zm-8 3.199 7.941 4.412A2 2 0 0 1 14 16H2a2 2 0 0 1-1.941-1.516L8 10.072Zm-8 3.3 5.693-3.162L0 6.873v6.5Z "/>
                           </svg>
-                        <span class="add-m">
+                        <span class="add-m ">
                            erikoglobalventures@gmail.com
                        </span>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-telephone-plus-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="15 " height="15 " fill="currentColor " class="bi bi-telephone-plus-fill " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306
+                1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0
+                0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5z "/>
                           </svg>
-                        <span class="add-m">
+                        <span class="add-m ">
                             08181845463
                         </span>
 
                     </p>
                 </div>
-                <div class="col-md-4 col-6 explore">
+                <div class="col-md-4 col-6 explore ">
                     <h3>
                         Explore
                     </h3>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Who we are </a>
+                        <a href=" ">Who we are </a>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Our Goals</a>
+                        <a href=" ">Our Goals</a>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Products</a>
+                        <a href=" ">Products</a>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Contact Us</a>
+                        <a href=" ">Contact Us</a>
                     </p>
                 </div>
-                <div class="col-md-4 col-6 cw-us">
+                <div class="col-md-4 col-6 cw-us ">
                     <h3>
                         Connect with us
                     </h3>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Facebook</a>
+                        <a href=" ">Facebook</a>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Whatsapp</a>
+                        <a href=" ">Whatsapp</a>
                     </p>
                     <p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg " width="13 " height="13 " fill="currentColor " class="bi bi-chevron-right " viewBox="0 0 16 16 ">
+                            <path fill-rule="evenodd " d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z "/>
                           </svg>
-                        <a href="">Email</a>
+                        <a href=" ">Email</a>
                     </p>
-                    <div class="s-hidden">
-                        <form action="post">
-                            <input type="email" name="email" class="form-control mb-2 sub-email" placeholder="Newsletter Subscription" id="">
-                            <input type="button" class="btn sub" value="Subscribe">
+                    <div class="s-hidden ">
+                        <form action="post ">
+                            <input type="email " name="email " class="form-control mb-2 sub-email " placeholder="Newsletter Subscription " id=" ">
+                            <input type="button " class="btn sub " value="Subscribe ">
                         </form>
                     </div>
                 </div>
@@ -564,7 +577,7 @@
     </section>
 
     <section>
-        <div class="container-fliud copyright">
+        <div class="container-fliud copyright ">
             <div>
                 <p>
                     © 2022 Greener Global Exports. All Rights Reserved. Powered by Idogwu Chinonso.
@@ -575,33 +588,21 @@
     </section>
 
     <!--Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" anonymous "></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+    <script src="./js/script.js "></script>
     <!-- custom JS code after importing jquery and owl -->
 
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 200, // values from 0 to 3000, with step 50ms
-            duration: 500, // values from 0 to 3000, with step 50ms
-            once: true,
-        });
-    </script>
 
+    <script src="./website-menu-07/js/jquery-3.3.1.min.js "></script>
 
-
-
-    <script src="./website-menu-07/js/jquery-3.3.1.min.js"></script>
-
-    <script src="./website-menu-07/js/popper.min.js"></script>
-    <script src="./website-menu-07/js/bootstrap.min.js"></script>
-    <script src="./website-menu-07/js/jquery.sticky.js"></script>
-    <script src="./website-menu-07/js/main.js"></script>
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./website-menu-07/js/popper.min.js "></script>
+    <script src="./website-menu-07/js/bootstrap.min.js "></script>
+    <script src="./website-menu-07/js/jquery.sticky.js "></script>
+    <script src="./website-menu-07/js/main.js "></script>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js "></script>
 </body>
 
 </html>
