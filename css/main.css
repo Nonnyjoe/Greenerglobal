@@ -155,6 +155,9 @@ a:hover {
     font-family: 'icomoon';
 }
 
+
+/* .......designed by Idogwu chinonso............... */
+
 .site-navbar .site-navigation .site-menu .has-children .dropdown {
     visibility: hidden;
     opacity: 0;
@@ -1010,6 +1013,9 @@ h1 {
     padding-bottom: .4em !important;
 }
 
+
+/* .......designed by Idogwu chinonso............... */
+
 .address p,
 .explore a,
 .cw-us a {
@@ -1115,6 +1121,20 @@ html {
         margin-top: -7px;
         margin-left: -7px;
     }
+    .about-us p {
+        color: #212529;
+        font-size: 17px;
+        text-align: justify;
+        line-height: 2em;
+    }
+    .p-s p {
+        color: #212529;
+        font-size: 17px;
+        line-height: 2em;
+        text-align: justify;
+        margin-top: 1em;
+        word-spacing: .02em;
+    }
     .about-us,
     .p-s1,
     .testimonies {
@@ -1190,12 +1210,16 @@ html {
     }
     .p-info-l p,
     .p-info p {
-        color: #fff;
+        color: #fff !important;
         font-size: 14px;
         text-align: center;
         justify-self: center;
         margin-top: -3px;
         font-family: 'Poppins', sans-serif;
+    }
+    .white {
+        color: #fff !important;
+        text-align: center !important;
     }
     .s-hidden {
         display: none;
@@ -1261,6 +1285,20 @@ html {
         z-index: 1;
         margin-top: -7px;
         margin-left: -7px;
+    }
+    .about-us p {
+        color: #212529;
+        font-size: 17px;
+        text-align: justify;
+        line-height: 2em;
+    }
+    .p-s p {
+        color: #212529;
+        font-size: 17px;
+        line-height: 2em;
+        text-align: justify;
+        margin-top: 1em;
+        word-spacing: .02em;
     }
     .about-us,
     .p-s1,
@@ -1390,7 +1428,7 @@ html {
     }
     .p-info p,
     .p-info-l p {
-        color: #fff;
+        color: #fff !important;
         font-size: 12px;
         text-align: center;
         justify-self: center;
